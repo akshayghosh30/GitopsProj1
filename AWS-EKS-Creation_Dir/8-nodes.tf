@@ -51,7 +51,7 @@ resource "aws_eks_node_group" "general" {
   instance_types = ["t2.medium"] #can be multiple instance types in a list
   scaling_config {
     desired_size = 2
-    max_size     = 5
+    max_size     = 6
     min_size     = 1
   }
   update_config {
